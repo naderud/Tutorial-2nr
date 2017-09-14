@@ -1,0 +1,166 @@
+@charset "utf-8";
+@@font-face {
+	font-family: Quicksand;
+	src: url('Quicksand-Regular.woff') format('woff'),
+			 url('Quicksand-Regular.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Tutorial Case
+
+   TSS Layout Styles
+	 Author: Nadean Rudolph
+	 Date:   9-13-17
+
+   Filename: tss_layout.css
+
+*/
+
+/* HTML and Body Styles */
+html {
+			background-color: hsl(27, 72%, 72%);
+}
+
+body {
+	color: rgb(91, 91, 91);
+	background-color: ivory;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Heading Styles */
+
+h1 {
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h1, h2, {
+	font-family:  Quicksand, Verdana, Geneva, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+article#about_tss h1 {
+	color: white;
+	background-color: rgb(222, 128, 60);
+ }
+
+article#about_tss h2 {
+	color: white;
+	background-color: rgb(235, 177, 131);
+}
+
+article.syllabus h1, article.syllabus h2 {
+	background-color: rgb(255, 185, 255);
+	color: rgb(101, 101, 101);
+}
+
+/* Aside and Blockquote Styles */
+
+aside {
+	font-size: 0.8em;
+}
+
+aside blockquote {
+	color: rgb(232, 165, 116);
+	margin: 20px 5px;
+}
+
+/* Navigation Styles */
+
+nav {
+	font-size: 0.8em;
+}
+
+nav > ul {
+	line-height: 2em;
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+nav > ul > li.newgroup {
+	margin-top: 20px;
+}
+
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+body > header {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+body > nav {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 1.5%;
+}
+
+body > article#about_tss {
+	width: 51%;
+	float: left;
+	margin: 0 3% 0 3%;
+}
+
+
+body > aside {
+	width: 20%;
+	float: left;
+	margin: 0 1.5% 0 0;
+}
+
+body > article#about_tss img {
+	float: right;
+	width: 40%;
+	margin: 0px 0 10px 10px;
+}
+
+article.syllabus {
+    float: left;
+	width: 74.5%;
+	margin: 0 4% 0 0%;
+}
+
+/*List Styles*/
+
+article#about_tss ul {
+	list-style-image: url(runicon.png);
+}
+
+article.syllabus ol {
+	list-style-type: upper-roman;
+}
+
+article.syllabus ol ol {
+	list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol {
+	list-style-type: decimal;
+}
+
+/*Footer Styles*/
+
+body > footer {
+	width: 100%;
+	clear: left;
+}
+
+body > footer address {
+	background-color: rgb(222, 128, 60);
+	color: white;
+	color: rgba(255, 255, 255, 0.7);
+	font: normal small-caps bold 0.9em/3em
+				Quicksand, Verdana, Geneva, sans-serif;
+	text-align: center;
+}
